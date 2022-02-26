@@ -1,0 +1,19 @@
+<h3> To Do </h3>
+
+<form method="POST" action="/">
+    {% csrf_token %}
+    {{form.title}}
+
+  <input type="submit" name="Create Work">
+
+</form>
+
+{% for work in works %}
+
+<div>
+
+    <p>{{work}}</p>
+
+</div>
+
+{% endfor %}
